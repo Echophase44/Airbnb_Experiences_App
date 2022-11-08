@@ -3,31 +3,51 @@
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #e5e5e5;
 }
 
 #root{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: gray;
+  height: 100vh;
 }
 
 .app-container{
   width: 550px;
   height: 750px;
   margin-top: 10px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
 }
 
 .nav-bar{
   height: 70px;
   display: flex;
-  align-items: center;
-  background-color: #FFFFFF;
-  border-radius: 5px 5px 0px 0px;
-  box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.1)
+  box-shadow: 0px 3px 7.5px rgba(0, 0, 0, 0.1);
+  padding: 20px 36px;
 }
 
 .nav-bar > img{
-  background-color: #FFFFFF;
-  padding-left: 30px;
+  max-width: 100px;
+}
+
+.hero--container{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.hero--img{
+  max-width: 375px;
+  align-self: center;
+}
+
+.hero--title{
+  margin-left: 35px;
+}
+
+.hero--content{
+  max-width: 320px;
+  margin-left: 50px;
 }
