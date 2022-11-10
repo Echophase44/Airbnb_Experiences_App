@@ -1,14 +1,22 @@
 import React from "react"
 import Nav from "./components/Nav"
 import Hero from "./components/Hero"
-import Cards from "./components/Cards"
+import Card from "./components/Card"
+import katieImg from "./images/katie-zaferes.png"
 
 function App () {
   return (
     <div className="app-container">
       <Nav />
       <Hero />
-      <Cards />
+      <Card 
+        img={katieImg}
+        rating="5.0"
+        reviewCount={6}
+        country = "USA"
+        title = "Life Lessons with Katie Zaferes"
+        price = {136}
+        />
     </div>
   )
 }
