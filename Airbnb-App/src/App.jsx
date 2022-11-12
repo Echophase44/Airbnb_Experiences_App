@@ -2,20 +2,27 @@ import React from "react"
 import Nav from "./components/Nav"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
+import data from "./data"
 
 function App () {
+  const cardInfo = data.map(user => {
+    return <Card 
+    img = {user.coverImg}
+    rating = {user.stats.rating}
+    reviewCount = {user.stats.reviewCount}
+    country = {user.location}
+    title = {user.title}
+    price = {user.price}
+    />
+  })
+
   return (
     <div className="app-container">
       <Nav />
       <Hero />
-      <Card 
-        img="../../public/images/katie-zaferes.png"
-        rating="5.0"
-        reviewCount={6}
-        country = "USA"
-        title = "Life Lessons with Katie Zaferes"
-        price = {136}
-        />
+      <section className="cards-list">
+        {cardInfo}
+      </section>
     </div>
   )
 }

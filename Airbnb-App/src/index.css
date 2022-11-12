@@ -24,7 +24,6 @@
 .app-container{
   width: 550px;
   height: 750px;
-  margin-top: 10px;
   background-color: #FFFFFF;
   border-radius: 5px;
 }
@@ -60,14 +59,29 @@
   margin-left: 50px;
 }
 
+.cards-list{
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
 .card{
   width: 175px;
   font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
 }
 
 .card--img{
   max-height: 200px;
   border-radius: 9px;
+}
+
+.card--title{
+  max-width: 150px;
 }
 
 .card--content{
