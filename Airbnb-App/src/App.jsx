@@ -2,7 +2,6 @@ import React from "react"
 import Nav from "./components/Nav"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
-import katieImg from "./images/katie-zaferes.png"
 
 function App () {
   return (
@@ -10,7 +9,7 @@ function App () {
       <Nav />
       <Hero />
       <Card 
-        img={katieImg}
+        img="../../public/images/katie-zaferes.png"
         rating="5.0"
         reviewCount={6}
         country = "USA"
