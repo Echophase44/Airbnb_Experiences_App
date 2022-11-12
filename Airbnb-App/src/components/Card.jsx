@@ -5,6 +5,7 @@ function Card(props){
   return(
     
     <div className="card">
+      {props.openSpots === 0 && <div className="card--badge">Sold Out</div>}
       <img className="card--img" src={props.img} alt="Katie Zaferes" />
       <div className="card--content">
         <img className="card--star" src={ Star } />

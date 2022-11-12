@@ -13,6 +13,7 @@ function App () {
     country = {user.location}
     title = {user.title}
     price = {user.price}
+    openSpots = {user.openSpots}
     />
   })
 
@@ -26,6 +27,5 @@ function App () {
     </div>
   )
 }
-
 
 export default App;
